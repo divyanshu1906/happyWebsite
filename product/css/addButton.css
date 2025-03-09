@@ -1,0 +1,25 @@
+
+
+.pill-button {
+    background: rgba(162, 79, 55, 0.458);
+    color: rgb(0, 0, 0);
+    border: 3px solid white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.pill-button:hover {
+    /*background: rgb(247, 14, 14);*/
+    color: #0d1a46;
+}
+
+.done {
+    background: rgba(109, 206, 90, 0.458);
+    color: #0d1a46;
+    border-color: white;
+}
