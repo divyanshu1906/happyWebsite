@@ -1,0 +1,20 @@
+:root{
+    --main-bg-color : rgb(74, 31, 31); 
+}
+
+.max-width-1{
+    max-width: 80vw;
+}
+
+.max-width-2{
+    max-width: 60vw;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.my-2{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}

@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.header {
+    background-color: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    margin-top: 25px !important;
+    height: 34px;
+    /* background-color: rgb(42, 57, 57); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-left img {
+    width: 100px; 
+    height: auto;
+    max-width: 100%;
+}
+
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.nav-left ul li{
+    list-style: none;
+    margin: 0 14px;
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left ul li a:hover {
+    color: var(--main-bg-color); 
+}
+
+.hero {
+    text-align: center;
+    font-size: 26px;
+    color: #2c3e50;
+    margin: 30px 0;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 15px;
+    background-color: #ecf0f1;
+}
+
+.image-container {
+    display: flex;
+    gap: 12px;
+}
+
+.image-container::-webkit-scrollbar {
+    height: 0px;
+}
+
+.image-container img {
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(169, 14, 14, 0.663);
+    border-radius: 10px;
+}
+
+.work-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+ /* Container for horizontal scrolling */
+ .video-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar (optional) */
+.video-container::-webkit-scrollbar {
+    height: 0px;
+}
+
+.video-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Video Styling */
+.video-container video {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 14px;
+}
