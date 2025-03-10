@@ -1,0 +1,103 @@
+.inspiration-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2d3436;
+    margin-bottom: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.conversation-flow {
+    display: grid;
+    gap: 2rem;
+}
+
+.message-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.message-card.left {
+    flex-direction: row;
+}
+
+.message-card.right {
+    flex-direction: row-reverse;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message-bubble {
+    max-width: 600px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.message-bubble::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    top: 20px;
+}
+
+.left .message-bubble::after {
+    border-right-color: white;
+    left: -30px;
+}
+
+.right .message-bubble::after {
+    border-left-color: white;
+    right: -30px;
+}
+
+.quote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.author {
+    font-weight: 600;
+    color: #2d3436;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .message-card {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    
+    .message-bubble::after {
+        display: none;
+    }
+    
+    .profile-img {
+        margin-bottom: 1rem;
+    }
+}
