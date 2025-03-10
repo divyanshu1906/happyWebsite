@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Change border color every 1 second (1000ms)
-    setInterval(changeBorderColor, 1000);
+    setInterval(changeBorderColor, 500);
 
     // Initial color setup
     changeBorderColor();
