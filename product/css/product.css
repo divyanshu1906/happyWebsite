@@ -199,12 +199,11 @@ header {
 }
 
 
-.footer{
-    height: 34px;
-    /* background-color: rgb(206, 99, 99); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    flex-direction: column;
+.foot{
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
 }

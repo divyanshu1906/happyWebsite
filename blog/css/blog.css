@@ -73,3 +73,11 @@ p {
     background: #a83232;
     color: white;
 }
+
+.foot{
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+}
