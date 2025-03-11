@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/productUtil.css" />
     <link rel="stylesheet" href="css/addButton.css" />
+    <link rel="stylesheet" href="css/cart.css">
   </head>
   <body>
     <div>
@@ -50,8 +51,8 @@
             <p>Dimensions: 2.5 x 6.5 ft</p>
             <br />
             <button id="SP-3078" class="pill-button" onclick="toggleButton()">
-              + Add
-            </button>
+    + Add
+</button>
           </div>
 
           <div class="product">
@@ -60,8 +61,8 @@
             <p>Dimensions: 2.5 x 7.0 ft</p>
             <br />
             <button id="SP-3084" class="pill-button" onclick="toggleButton()">
-              + Add
-            </button>
+    + Add
+</button>
           </div>
 
           <div class="product">
@@ -70,8 +71,8 @@
             <p>Dimensions: 2.5 x 8.0 ft</p>
             <br />
             <button id="addButton" class="pill-button" onclick="toggleButton()">
-              + Add
-            </button>
+    + Add
+</button>
           </div>
 
           <div class="product">
@@ -80,8 +81,8 @@
             <p>Dimensions: 3.0 x 6.5 ft</p>
             <br />
             <button id="addButton" class="pill-button" onclick="toggleButton()">
-              + Add
-            </button>
+    + Add
+</button>
           </div>
 
           <div class="product">
@@ -131,7 +132,7 @@
             <br />
             <button id="addButton" class="pill-button" onclick="toggleButton()">
               + Add
-            </button>
+          </button>
           </div>
 
           <div class="product">
@@ -141,7 +142,7 @@
             <br />
             <button id="addButton" class="pill-button" onclick="toggleButton()">
               + Add
-            </button>
+          </button>
           </div>
           <div class="product">
             <img src="image/img5.jpg" alt="Product 11" />
@@ -150,7 +151,7 @@
             <br />
             <button id="addButton" class="pill-button" onclick="toggleButton()">
               + Add
-            </button>
+          </button>
           </div>
 
           <div class="product">
@@ -160,13 +161,18 @@
             <br />
             <button id="addButton" class="pill-button" onclick="toggleButton()">
               + Add
-            </button>
+          </button>
           </div>
 
           <!-- Add more products as needed -->
         </section>
       </div>
       
+<!------------Cart-------Button-----------------------------------------> 
+<button class="cart-button" onclick="goToCartPage()">
+  🛒 Cart <span id="cart-count">0</span>
+</button>  
+
     </div>
     <footer style="text-align: center; padding: 15px; background: #222; color: #fff; font-size: 14px;">
       <p> Copyright &copy; happySteel<strong>2025</strong>. All Rights Reserved. 
@@ -175,5 +181,6 @@
       </p>
     </footer>
     <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>

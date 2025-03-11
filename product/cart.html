@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product.css">
+    <title>Shopping Cart</title>
+    <style>
+        .product-container { display: flex; flex-wrap: wrap; }
+        .product { width: 200px; margin: 10px; border: 1px solid #ddd; padding: 10px; }
+        .cart-button { position: fixed; top: 10px; right: 10px; background: blue; color: white; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Your Cart</h2>
+    <div class="product-container" id="cart-items"></div>
+    <button class="cart-button" onclick="window.location.href='product.html'">Back to Shop</button>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function displayCart() {
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p>Your cart is empty.</p>';
+                return;
+            }
+
+            cart.forEach(item => {
+                const div = document.createElement('div');
+                div.classList.add('product');
+                div.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" width="100">
+                    <h2>${item.name}</h2>
+                    <p>Dimensions: ${item.dimensions}</p>
+                `;
+                cartItems.appendChild(div);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', displayCart);
+    </script>
+</body>
+</html>
