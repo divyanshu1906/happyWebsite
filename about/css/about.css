@@ -30,6 +30,7 @@
     align-items: center;
     margin-left: auto;
     font-size: 18px;
+    justify-content: center;
 }
 
 .nav-left ul li{
@@ -47,10 +48,12 @@
 }
 
 .content{
-    height: 80vh;
+    min-height: calc(100vh - 100px);
     /* background-color: rgb(202, 202, 230); */
     position: relative;
     padding: 35px;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .content::after{
@@ -113,11 +116,10 @@
 
 
 .footer{
-    height: 34px;
-    /* background-color: rgb(206, 99, 99); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    flex-direction: column;
+    text-align: center;
+    padding: 15px; 
+    background: #222; 
+    color: #fff; 
+    font-size: 14px;
+    width: 100%;
 }
