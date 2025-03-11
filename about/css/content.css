@@ -19,6 +19,12 @@ body {
     position: relative;
 }
 
+.about-para{
+    margin: 0; /* Remove default margins */
+    padding: 10px 0; /* Adjust padding */
+    line-height: 1.5;
+}
+
 h1, h2 {
     color: #2c3e50;
 }
@@ -32,16 +38,23 @@ p {
 
 .manager-section {
     display: flex;
-    align-items: center;
-    margin-top: 30px;
+    align-items: flex-start;
+    margin-top: 10px; /* Reduce margin above */
+    gap: 20px;
 }
 
 .manager-section .text {
     flex: 1;
-    padding-right: 20px;
+    padding-right: 10px;
+    min-width: 250px;
 }
 
 .manager-section .image {
+    /* flex-basis: 250px;
+    text-align: center; */
+    display: flex;
+    flex-direction: column; /* Stack image and caption */
+    align-items: center;
     flex-basis: 250px;
     text-align: center;
 }
@@ -50,7 +63,33 @@ p {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    flex-wrap: wrap;
 }
+
+@media screen and (max-width: 768px) {
+    .manager-section {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .manager-section .text {
+        padding-right: 0;
+    }
+}
+
+.content ul {
+    list-style-type: none; /* Removes default bullets (optional) */
+    padding: 0;
+    margin: 0;
+}
+
+.content ul li {
+    margin-bottom: 12px; /* Adjust space between list items */
+    line-height: 1.5; /* Improves readability */
+}
+
 
 .caption {
     font-size: 14px;

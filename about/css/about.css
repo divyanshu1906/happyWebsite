@@ -93,8 +93,8 @@
 
 .content, .home-articles {
     max-width: 90%; 
-    margin: 0 auto;
-    padding: 35px;
+    margin: 0 3vh 2vh;
+    padding: 0vh;
     box-sizing: border-box;
 }
 
