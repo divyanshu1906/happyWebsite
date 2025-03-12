@@ -112,33 +112,6 @@ body {
     margin: 40px 0;
 }
 
- /* Container for horizontal scrolling */
- .video-container {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 10px;
-    padding: 10px;
-    scroll-behavior: smooth;
-}
-
-/* Hide scrollbar (optional) */
-.video-container::-webkit-scrollbar {
-    height: 0px;
-}
-
-.video-container::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-}
-
-/* Video Styling */
-.video-container video {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    flex-shrink: 0;
-}
 
 .footer {
     text-align: center;
